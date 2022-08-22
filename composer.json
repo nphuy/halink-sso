@@ -1,5 +1,5 @@
 {
-    "name": "huynp/sso-package",
+    "name": "halink/sso-package",
     "require": {},
     "autoload": {
         "psr-4": {
