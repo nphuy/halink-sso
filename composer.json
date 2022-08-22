@@ -1,7 +1,7 @@
 {
     "name": "halink/sso-package",
     "description": "A package for Halink SSO",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "license": "MIT",
     "require": {},
     "autoload": {
@@ -16,6 +16,6 @@
     "authors": [{
         "name": "Huy Nguyen",
         "email": "huynp.dev@gmail.com"
-    }],
+    }]
 
 }
