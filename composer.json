@@ -1,0 +1,17 @@
+{
+    "name": "huynp/sso-package",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Halink\\SSO\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+
+    "authors": [{
+        "name": "Huy Nguyen",
+        "email": "huynp.dev@gmail.com"
+    }]
+}
