@@ -1,7 +1,7 @@
 {
     "name": "halink/sso-package",
     "description": "A package for Halink SSO",
-    "version": "v1.0.3",
+    "version": "v1.0.4",
     "license": "MIT",
     "require": {},
     "autoload": {
