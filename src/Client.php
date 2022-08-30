@@ -3,6 +3,7 @@
 namespace Halink\SSO;
 
 use Halink\SSO\Exceptions\ClientException;
+use Halink\SSO\Response\Client as ClientResponse;
 
 class Client
 {
@@ -28,6 +29,9 @@ class Client
             'client_id' => $client_id,
             'redirect_uri' => $redirect_uri,
         ];
+        if (!empty($config['fields']) && is_array($config['fields'])) {
+            $query['fields'] = implode(',', $config['fields']);
+        }
         $this->url = $this->client_url . '?' . http_build_query($query);
     }
     public function getOauthUrl()
@@ -45,6 +49,10 @@ class Client
     }
     public function me()
     {
+        $status = (int) $_GET['status'];
+        if ($status !== 1) {
+            throw new ClientException('Khách hàng không đồng ý cho truy cập dữ liệu');
+        }
         $token = $this->getAccessToken();
         // var_dump($token);
         $curl = curl_init();

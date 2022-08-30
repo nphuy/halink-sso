@@ -2,7 +2,7 @@
 Install via composer:
 
 ```sh
-composer require hnp/sso-package
+composer require halink/sso-package
 ```
 ## Preparing your code
 
@@ -21,6 +21,7 @@ $client = new Client([
     'client_id' => '...',
     'client_secret' => '...',
     'redirect_uri' => '...',
+    'fields'=>['fullname', 'email', 'phone', 'address']
 ]);
 ```
 Get the authorization URL:
